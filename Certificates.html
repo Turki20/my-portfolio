@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aa8d28d2d0.js" crossorigin="anonymous"></script>    <title>Turki Ahmed</title>
+</head>
+
+<body>
+    <header>
+        <i class="fa-solid fa-bars" onclick="menu(this)"></i>
+        <ul id="menu">
+            <li><a href="#">CV</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Certificates</a></li>
+        </ul>
+    </header>
+    <section id="section_top">
+        <div class="cont cirtificate">
+            <h1>JavaScript</h1>
+            <hr>
+            <p>Training Course - Ministry of Communications and Information Technology</p>
+            <img src="cirtificate/javascript.png" alt="">
+        </div>
+        <div class="cont cirtificate">
+            <h1>HTML</h1>
+            <hr>
+            <p>Training Course - Ministry of Communications and Information Technology</p>
+            <img src="cirtificate/HTML.png" alt="">
+        </div>
+       
+    </section>
+    <footer>
+        <h3>© 2025 Turki Ahmed</h3>
+    </footer>
+    <script>
+        let open = false;
+        function menu(el) {
+            let m = document.getElementById('menu');
+            if (!open) {
+                m.style.left = '0%';
+                open = true;
+            }else{
+                m.style.left = '-50%';
+                open = false;
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

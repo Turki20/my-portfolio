@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aa8d28d2d0.js" crossorigin="anonymous"></script>    <title>Turki Ahmed</title>
+</head>
+
+<body>
+    <header>
+        <i class="fa-solid fa-bars" onclick="menu(this)"></i>
+        <ul id="menu">
+            <li><a href="#">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="Certificates.html">Certificates</a></li>
+        </ul>
+    </header>
+    <h1 class="h1">Contact</h1>
+    <main id="contact">
+        <div id="left_side">
+            <h3><a href="#"><i class="fa-brands fa-linkedin"></i> Linkdin</a></h3>
+            <h3><a href="http:"><i class="fa-regular fa-envelope"></i> Email</a></h3>
+        </div>
+        <div id="content">
+            <div id="form">
+               <form action="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="Email" name="email" id="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <input type="submit" value="Send">
+               </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>© 2025 Turki Ahmed</h3>
+    </footer>
+    <script>
+        let open = false;
+        function menu(el) {
+            let m = document.getElementById('menu');
+            if (!open) {
+                m.style.left = '0%';
+                open = true;
+            }else{
+                m.style.left = '-50%';
+                open = false;
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
