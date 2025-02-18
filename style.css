@@ -3,6 +3,14 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#skills, #Education, #Certificates {
+    scroll-margin-top: 170px;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -63,11 +71,32 @@ header, footer {
     width: 70%;
     margin: 50px;
     border-radius: 50%;
-    border: 3px #2c70b9 solid;
     transition: 0.2s ease-in-out;
     margin-top: 150px;
 }
 
+.image-shadow {
+    box-shadow: 0 0 20px #2c70b9;
+    animation: changeShadow 5s infinite ease-in-out;
+  }
+
+  @keyframes changeShadow {
+    0% {
+      box-shadow: 0 0 20px #000000;
+    }
+    25% {
+      box-shadow: 0 0 20px #2c70b9;
+    }
+    50% {
+      box-shadow: 0 0 20px #000000;
+    }
+    75% {
+      box-shadow: 0 0 20px #2c70b9;
+    }
+    100% {
+      box-shadow: 0 0 20px #000000;
+    }
+  }
 
 main{
     height: auto;
