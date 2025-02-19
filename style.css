@@ -206,7 +206,8 @@ header ul li:last-child{
 }
 
 header i {
-    display: none;   
+    display: none; 
+    color: #252525;
 }
 footer {
     background-color: #252525;
