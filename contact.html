@@ -27,14 +27,16 @@
         </div>
         <div id="content">
             <div id="form">
-               <form action="POST">
+               <form action="https://formsubmit.co/turki202mt@gmail.com" method="post">
+                <input type="hidden" name="_next" value="https://turki20.github.io/my-portfolio/index.html">
+                <input type="hidden" name="_captcha" value="false">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" placeholder="your name" required>
                 <label for="email">Email</label>
-                <input type="Email" name="email" id="email">
+                <input type="Email" name="email" id="email" placeholder="your email" required>
                 <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
-                <input type="submit" value="Send" disabled>
+                <textarea name="message" id="message" placeholder="message" required></textarea>
+                <input type="submit" value="Send">
                </form>
                <p id="msg" style="color: red;">Sorry, technical failure, please use email communication</p>
 
