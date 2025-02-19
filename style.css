@@ -280,6 +280,26 @@ footer {
     main #left_side h3{
         width: 100%;
     }
+     .shedule table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shedule thead {
+        display: none; 
+    }
+
+    .shedule tr {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .shedule td {
+        text-align: left;
+    }
 }
 
 .cirtificate:first-child {
